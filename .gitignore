@@ -351,3 +351,4 @@ MigrationBackup/
 
 # Ignore vscode folder
 .vscode
+.idea/
