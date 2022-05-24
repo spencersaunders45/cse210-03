@@ -23,13 +23,13 @@
             _wrongGuesses = 0;
             _currentWordState = "";
 
-            foreach (char character in _currentWord)
-            {
-                if (character != ' ')
-                    _currentWordState += "_";
-                else
-                    _currentWordState += " ";
-            }
+            // foreach (char character in _currentWord)
+            // {
+            //     if (character != ' ')
+            //         _currentWordState += "_";
+            //     else
+            //         _currentWordState += " ";
+            // }
         }
         
         /// <summary>
