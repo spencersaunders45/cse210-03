@@ -19,7 +19,7 @@
         {
             _io = new IO();
             _word = new Word();
-            _currentWord = _word.GetRandomWord();
+            _currentWord = _word.GetNextWord();
             _wrongGuesses = 0;
             _currentWordState = "";
 
@@ -47,7 +47,7 @@
                 _guess = _io.JumperGuess();
                 
                 // Compare guess against the current word
-                string guessed = _word.CompareGuess(_guess, _currentWord, _currentWordState);
+                string guessed = _word.CompareWords(_guess); //_currentWord, _currentWordState
                 
                 // Apply the consequence based on the results of the guess comparison
                 if (_currentWordState == guessed)
