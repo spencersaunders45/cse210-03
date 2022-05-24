@@ -19,11 +19,13 @@ public class Word{
 
         theword = "null";
     }
-    public string GetNextWord(){
+    //  gets a random word when you call the funciton
+    public void GetNextWord(){
         Random rd = new Random();
+        // Call random int from size of list size.
         int _current_word = rd.Next(0,(_words.Count -1));
         theword = _words[_current_word];
-        return _words[_current_word];
+
     }
 //    takes in Guess as a one letter string variable, and output a string that tells the user what they got wrong/ right in the guess.
 //    Example: Word hello guess h output h_____ 
