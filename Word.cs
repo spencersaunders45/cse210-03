@@ -1,51 +1,59 @@
 namespace cse210_03{
-    class Word{
-        List<string> _words;
-        public Word()
-        {
-            _words = new List<string>();
-            _words.Add("qeue");
-            _words.Add("squirrel");
-            _words.Add("misspelled");
-            _words.Add("my name is john.");
-            _words.Add("hello there");
-            _words.Add("general kenobi");
-            _words.Add("i have become self aware");
-            _words.Add("whats up dog my name is jack");
-            _words.Add("luke i am your father");
-            _words.Add("hi");
-        }
-    
-        /// <summary>
-        /// Return a randomly selected word from the list
-        /// </summary>
-        /// <returns></returns>
-        public string GetRandomWord()
-        {
-            Random random = new Random();
-            int randInt = random.Next(0, _words.Count);
-            return _words[randInt];
-        }
+public class Word{
+    private List<string> _words = new List<string>();
+    private List<string> _alreadyguest = new List<string>();
+    public int _currentWord;
+    public string theword;
+    private bool _currentguessedletter;
+    public Word(){
+        _words.Add("qeue");
+        _words.Add("squirel");
+        _words.Add("misspelled");
+        _words.Add("my name is john.");
+        _words.Add("hello there");
+        _words.Add("generalg kenobi");
+        _words.Add("i have become self aware");
+        _words.Add("whats up dog, my name is jack");
+        _words.Add("luke i am your father");
+        _words.Add("hi");
 
-        /// <summary>
-        /// Compares the guess against the word and returns the result.
-        /// </summary>
-        /// <param name="guess"></param>
-        /// <param name="word"></param>
-        /// <returns></returns>
-        public string CompareGuess(string guess, string word, string currentWordState)
-        {
-            for (int i = 0; i < word.Length; i++)
-            {
-                if (word[i] == guess[0])
-                {
-                    // Convert to char array for easier modification
-                    Char[] newList = currentWordState.ToCharArray();
-                    newList[i] = guess[0];
-                    currentWordState = new string(newList);
+        theword = "null";
+    }
+    public string GetNextWord(){
+        Random rd = new Random();
+        int _current_word = rd.Next(0,(_words.Count -1));
+        theword = _words[_current_word];
+        return _words[_current_word];
+    }
+//    takes in Guess as a one letter string variable, and output a string that tells the user what they got wrong/ right in the guess.
+//    Example: Word hello guess h output h_____ 
+    public void CompareWords( string guess){
+        Console.WriteLine(theword);
+        // Goes through each of the letters of the words. It then produces word as characters in the word.
+        foreach (var word in theword){
+            _currentguessedletter = false;
+            // Goes through each of the different letters that the user has already guessed.
+            foreach (var guessed in _alreadyguest){
+                if (Convert.ToString(guessed) == Convert.ToString(word)){
+                    Console.Write(guessed);
+                    _currentguessedletter = true;
                 }
             }
-            return currentWordState;
+            //  If you have guessed the letter it will print it out on the screen and then adds it to a list of guessed words.
+            if (guess.Equals(Convert.ToString(word)) && _currentguessedletter != true){
+                Console.Write(word);
+                _alreadyguest.Add(Convert.ToString(word));
+                }
+            // If there is a space in the words, it will add a space in the words.
+            if(string.IsNullOrWhiteSpace(Convert.ToString(word))){
+                Console.Write(" ");
+            }
+            // If the guess is wrong, and 
+            else if (_currentguessedletter != true){
+                Console.Write("_");
+
+            }
+        }
         }
     }
 }
