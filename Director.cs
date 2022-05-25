@@ -40,6 +40,7 @@
         {
             while (_parachute.GetWrongGuesses() < 4)
             {
+                _currentWordState = _word.CompareWords("");
                 // Display basic information to player
                 _io.DisplayJumper(_parachute.GetWrongGuesses(), 4);
                 _io.DisplayCurrentWord(_currentWordState);
