@@ -6,16 +6,12 @@ public class Word{
     public string theword;
     private bool _currentguessedletter;
     public Word(){
-        _words.Add("qeue");
-        _words.Add("squirel");
-        _words.Add("misspelled");
-        _words.Add("my name is john.");
-        _words.Add("hello there");
-        _words.Add("generalg kenobi");
-        _words.Add("i have become self aware");
-        _words.Add("whats up dog, my name is jack");
-        _words.Add("luke i am your father");
-        _words.Add("hi");
+    _words.Add("he decided water-skiing on a frozen lake wasn’t a good idea");
+    _words.Add("he wasn't bitter that she had moved on but from the radish");
+    _words.Add("he picked up trash in his spare time to dump in his neighbor's yard");
+    _words.Add("she lived on Monkey Jungle Road and that seemed to explain all of her strangeness");
+    _words.Add("we have never been to Asia, nor have we visited Africa");
+    _words.Add("separation anxiety is what happens when you can't find your phone");
 
         theword = "null";
     }
@@ -46,12 +42,25 @@ public class Word{
                 wordCurrentState = wordCurrentState + word;
                 // Console.Write(word);
                 _alreadyguest.Add(Convert.ToString(word));
+                _currentguessedletter = true;
                 }
             // If there is a space in the words, it will add a space in the words.
             if(string.IsNullOrWhiteSpace(Convert.ToString(word))){
                 wordCurrentState = wordCurrentState + " ";
                 // Console.Write(" ");
             }
+            else if ("\'".Equals(Convert.ToString(word)) && _currentguessedletter != true){
+                wordCurrentState = wordCurrentState + word;
+                // Console.Write(word);
+                _alreadyguest.Add(Convert.ToString(word));
+                _currentguessedletter = true;
+                }
+            else if ("-".Equals(Convert.ToString(word)) && _currentguessedletter != true){
+                wordCurrentState = wordCurrentState + word;
+                // Console.Write(word);
+                _alreadyguest.Add(Convert.ToString(word));
+                _currentguessedletter = true;
+                }
             // If the guess is wrong, and 
             else if (_currentguessedletter != true){
                 wordCurrentState = wordCurrentState + "_";
