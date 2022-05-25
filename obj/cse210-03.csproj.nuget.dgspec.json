@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jacob\\Documents\\Class_Projects\\cse210-03\\cse210-03.csproj": {}
+    "C:\\Users\\mrjta\\Documents\\new_repo\\cse210-03\\cse210-03.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jacob\\Documents\\Class_Projects\\cse210-03\\cse210-03.csproj": {
+    "C:\\Users\\mrjta\\Documents\\new_repo\\cse210-03\\cse210-03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jacob\\Documents\\Class_Projects\\cse210-03\\cse210-03.csproj",
+        "projectUniqueName": "C:\\Users\\mrjta\\Documents\\new_repo\\cse210-03\\cse210-03.csproj",
         "projectName": "cse210-03",
-        "projectPath": "C:\\Users\\Jacob\\Documents\\Class_Projects\\cse210-03\\cse210-03.csproj",
-        "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jacob\\Documents\\Class_Projects\\cse210-03\\obj\\",
+        "projectPath": "C:\\Users\\mrjta\\Documents\\new_repo\\cse210-03\\cse210-03.csproj",
+        "packagesPath": "C:\\Users\\mrjta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mrjta\\Documents\\new_repo\\cse210-03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jacob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\mrjta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
