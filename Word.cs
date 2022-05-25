@@ -61,6 +61,12 @@ public class Word{
                 _alreadyguest.Add(Convert.ToString(word));
                 _currentguessedletter = true;
                 }
+            else if (",".Equals(Convert.ToString(word)) && _currentguessedletter != true){
+                wordCurrentState = wordCurrentState + word;
+                // Console.Write(word);
+                _alreadyguest.Add(Convert.ToString(word));
+                _currentguessedletter = true;
+                }
             // If the guess is wrong, and 
             else if (_currentguessedletter != true){
                 wordCurrentState = wordCurrentState + "_";
