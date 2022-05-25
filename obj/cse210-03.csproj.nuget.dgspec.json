@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrjta\\Documents\\new_repo\\cse210-03\\cse210-03.csproj": {}
+    "C:\\cse210\\cse210-03\\cse210-03.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mrjta\\Documents\\new_repo\\cse210-03\\cse210-03.csproj": {
+    "C:\\cse210\\cse210-03\\cse210-03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrjta\\Documents\\new_repo\\cse210-03\\cse210-03.csproj",
+        "projectUniqueName": "C:\\cse210\\cse210-03\\cse210-03.csproj",
         "projectName": "cse210-03",
-        "projectPath": "C:\\Users\\mrjta\\Documents\\new_repo\\cse210-03\\cse210-03.csproj",
-        "packagesPath": "C:\\Users\\mrjta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrjta\\Documents\\new_repo\\cse210-03\\obj\\",
+        "projectPath": "C:\\cse210\\cse210-03\\cse210-03.csproj",
+        "packagesPath": "C:\\Users\\Jeong\\.nuget\\packages\\",
+        "outputPath": "C:\\cse210\\cse210-03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mrjta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Jeong\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
